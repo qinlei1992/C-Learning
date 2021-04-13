@@ -1,1 +1,3 @@
-# C-Learning
+# C++Learning
+
+the complier used is g++
