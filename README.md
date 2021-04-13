@@ -1,2 +1,4 @@
-# C-Learning
-testing
+# C++Learning
+
+the complier used is g++
+
