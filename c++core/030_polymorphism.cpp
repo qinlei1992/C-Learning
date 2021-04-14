@@ -24,15 +24,19 @@ class Dog : public Animal{
         }
 };
 
-void DoSpeak(Animal &animal){
-    animal.speak();
+void DoSpeak(Animal* animal){
+    animal->speak();
 }
 
 int main(int argc, char const *argv[])
 {
 
     Cat cat;
-    DoSpeak(cat);
+    Dog dog;
+    Animal* a1 = &cat; //base class and derived class can be intechangable
+    Animal* a2 = &dog;
+    DoSpeak(a1);
+    DoSpeak(a2);
 
     return 0;
 }
